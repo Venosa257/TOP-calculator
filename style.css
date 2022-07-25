@@ -1,0 +1,49 @@
+body {
+  background-color: #ccccff;
+}
+button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: #98a7e6;
+}
+#display {
+  background-color: #d1d2e8;
+  width: 243px;
+  height: 50px;
+  grid-area: display;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  border: #333 solid 1px;
+}
+#container {
+  padding-left: 15px;
+  padding-top: 20px;
+  width: 260px;
+  height: 420px;
+  box-shadow: #333 0px 0px 5px;
+  background-color: #8090d4;
+  margin: 20px auto;
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o equal"
+    "p q r equal";
+  border: #333 solid 3px;
+  border-radius: 16px;
+}
+#equal {
+  grid-area: equal;
+  height: 130px;
+}
+#top-display {
+  height: 20px;
+}
+#bot-display {
+  font-size: 24px;
+}
